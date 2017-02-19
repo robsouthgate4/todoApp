@@ -4,7 +4,7 @@ import { TodoItem } from './TodoItem';
 export const TodoList = (props) => (
     <div className="todo-list">
       <ul>
-        { props.todos.map((todo, index) => <TodoItem key={index} {...todo}></TodoItem>) }
+        { props.todos.map((todo, index) => <TodoItem handleDelete={props.handleDelete} handleToggle={props.handleToggle} key={index} {...todo}></TodoItem>) }
       </ul>
     </div>)
 

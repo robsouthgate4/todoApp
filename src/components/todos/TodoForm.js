@@ -6,5 +6,6 @@ export const TodoForm = (props) => (
     </form>)
 
 TodoForm.PropTypes = {
-  currentTodo: PropTypes.string
+  currentTodo: PropTypes.string,
+  handleSubmit: PropTypes.func
 }

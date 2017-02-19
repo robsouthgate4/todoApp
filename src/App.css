@@ -40,3 +40,20 @@ ul {
 li {
   list-style-type: none;
 }
+
+.footer a {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.footer a.active {
+  font-weight: bold;
+}
+
+li:hover .delete{ display: inline-block;}
+
+.delete {
+  color: red;
+  cursor: pointer;
+  display: none;
+}
