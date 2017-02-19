@@ -39,6 +39,7 @@ ul {
 
 li {
   list-style-type: none;
+  transform-origin: top left;
 }
 
 .footer a {
@@ -56,4 +57,22 @@ li:hover .delete{ display: inline-block;}
   color: red;
   cursor: pointer;
   display: none;
+}
+
+.example-enter {
+  transform: scale(0.01);
+}
+
+.example-enter.example-enter-active {
+  transform: scale(1);
+  transition: transform 500ms ease-in;
+}
+
+.example-leave {
+  transform: scale(1);
+}
+
+.example-leave.example-leave-active {
+  transform: scale(0.01);
+  transition: transform 300ms ease-in;
 }
